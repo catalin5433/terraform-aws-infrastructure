@@ -8,7 +8,7 @@ resource "aws_key_pair" "key_pair1" {
 # The first EC2 instance
 resource "aws_instance" "web_server_main" {
   ami                    = "ami-0a116fa7c861dd5f9"
-  instance_type          = "t3.micro"
+  instance_type          = "c7i-flex.large"
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.main.id]
   key_name               = aws_key_pair.key_pair1.key_name
