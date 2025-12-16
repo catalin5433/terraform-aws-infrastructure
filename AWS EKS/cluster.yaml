@@ -1,6 +1,6 @@
 ---
-apiVersion: eksctl.io/v1alpha5  #apiVersion = “vorbim limba asta cand citim fisierul”
-kind: ClusterConfig #kind spune ce tip de obiect descrii.
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
 
 metadata:
   name: catalin-eks
