@@ -7,8 +7,8 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 3000  #mapare port 80:3000
+      targetPort: 3000
       protocol: TCP
-  type: NodePort  #you need to use it in order to make use of an AWS Load balancer
+  type: NodePort
   selector:
     app: pod-info
